@@ -1,11 +1,25 @@
-import './App.css';
+import { ThemeProvider } from 'styled-components'
+import GlobalStyles from './components/styles/Global'
+
+
+const theme = {
+    colors: {
+        header: '#ebfbff',
+        body: '#777',
+        footer: '#003333',
+    },
+    mobile: '768px',
+};
 
 
 const App = () => {
     return (
-        <div className="App">
-            Marvel Api
-        </div>
+        <ThemeProvider theme={theme}>
+            <>
+                <GlobalStyles />
+                Marvel Api
+            </>
+        </ThemeProvider>
     );
 }
 
