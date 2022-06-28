@@ -1,6 +1,7 @@
 import GlobalStyles from './components/styles/Global';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import SearchCharacters from './pages/SearchCharacters/SearchCharacters';
 
 
 const App = () => {
@@ -9,9 +10,7 @@ const App = () => {
         <div className="App">
             <GlobalStyles />
             <Header title={"Marvel Api"} />
-            <div className="page">
-                Hello
-            </div>
+            <SearchCharacters />
             <Footer copyright={"CelestialCoyote 2022"} />
         </div>
     );
