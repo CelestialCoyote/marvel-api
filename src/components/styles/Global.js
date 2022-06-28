@@ -2,28 +2,36 @@ import { createGlobalStyle } from 'styled-components'
 
 
 const GlobalStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+    @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
-  * {
-    box-sizing: border-box;
-  }
+    * {
+        box-sizing: border-box;
+        font-family: 'Comic Neue', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
 
-  body {
-    background: ${({ theme }) => theme.colors.body};
-    color: hsl(192, 100%, 9%);
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.15em;
-    margin: 0;
-  }
+    body {
+        background-color: black;
+        display: flex;
+        height: 100vh;
+    }
 
-  p {
-    opacity: 0.6;
-    line-height: 1.5;
-  }
+    #root {
+        display: flex;
+        flex-grow: 1;
+    }
 
-  img {
-    max-width: 100%;
-}
+    .App {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .page {
+        background-color: gray;
+        flex: 1;
+    }
 `
 
 export default GlobalStyles;
