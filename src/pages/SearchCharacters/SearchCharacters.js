@@ -1,12 +1,34 @@
+import { useState } from 'react';
 import SearchBar from "../../components/SearchBar/SearchBar";
-import { StyledSearchCharacters } from "./SearchCharacters.styled";
+import CharacterCard from '../../components/CharacterCard/CharacterCard';
+import { StyledSearchCharacters, StyledSearchResults } from "./SearchCharacters.styled";
+
 
 const SearchCharacters = () => {
+    const [characters, setCharacters] = useState([]);
 
     return (
+
         <StyledSearchCharacters>
-            <SearchBar />
+
+            <SearchBar setCharacters={setCharacters}/>
+
+            <StyledSearchResults>
+                {characters &&
+                    characters.map(character =>
+                        <li key={character.id}>
+                            <CharacterCard
+                                character={character}
+                                //setCharacter={setCharacter}
+                                //setCharacterDetails={setCharacterDetails}
+                            />
+                        </li>
+                    )
+                }
+            </StyledSearchResults>
+
         </StyledSearchCharacters>
+
     );
 };
 

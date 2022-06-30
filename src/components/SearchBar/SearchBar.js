@@ -1,12 +1,34 @@
+import { useState } from 'react';
+import axios from 'axios';
+import generateMarvelAuthentication from '../../marvelAPI/generateMarvelAuthentication';
 import { StyledSearchBar } from "./SearchBar.styled";
 
 
-const SearchBar = ({ searchText, setSearchText, searchCharacters }) => {
+const SearchBar = ({ setCharacters }) => {
+    const [searchText, setSearchText] = useState('');
+
+    const BASE_MARVEL_URL = 'http://gateway.marvel.com/v1/public/';
+    const marvelAuth = generateMarvelAuthentication();
+
+
     const submitForm = (event) => {
         event.preventDefault();
         searchCharacters();
         setSearchText('');
-    }
+    };
+
+    const searchCharacters = async () => {
+        let url = `${BASE_MARVEL_URL}/characters?nameStartsWith=${searchText}${marvelAuth}`;
+        console.log(url);
+
+        try {
+            let comicData = await axios.get(url);
+
+            setCharacters(comicData.data.data.results);
+        } catch (error) {
+            console.log(error.message);
+        }
+    };
 
     return (
         

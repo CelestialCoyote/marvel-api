@@ -6,7 +6,7 @@ export const StyledSearchBar = styled.form`
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-top: 2.0rem;
+    margin: 2.0rem 0;
 
     .searchBar {
         display: flex;
