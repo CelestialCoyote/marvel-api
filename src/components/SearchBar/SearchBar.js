@@ -19,7 +19,6 @@ const SearchBar = ({ setCharacters }) => {
 
     const searchCharacters = async () => {
         let url = `${BASE_MARVEL_URL}/characters?nameStartsWith=${searchText}${marvelAuth}`;
-        console.log(url);
 
         try {
             let comicData = await axios.get(url);

@@ -1,5 +1,6 @@
 import React from 'react';
-import './CharacterCard.css';
+import { StyledCharacterCard } from './CharacterCard.styled';
+//import './CharacterCard.css';
 
 
 const CharacterCard = ({ character, setCharacter, setCharacterDetails }) => {
@@ -7,26 +8,26 @@ const CharacterCard = ({ character, setCharacter, setCharacterDetails }) => {
 
     return (
 
-        <div className="characterCard">
+        <StyledCharacterCard>
 
-            <img className="characterCard__image" src={characterImage} alt="character" />
-            <div className="characterCard__container">
-                <div className="characterCard__info">
+            <img className="characterCard_image" src={characterImage} alt="character" />
+            <div className="characterCard_container">
+                <div className="characterCard_info">
                     <p
-                        className="characterCard__text">
+                        className="characterCard_text">
                         <span className="heading">Marvel ID: </span>
                         {character.id}
                     </p>
                     <p
-                        className="characterCard__text">
+                        className="characterCard_text">
                         <span className="heading">Name: </span>
                         {character.name}
                     </p>
                 </div>
 
-                <div className="characterCard__actions">
+                <div className="characterCard_actions">
                     <button
-                        className="characterCard__button"
+                        className="characterCard_button"
                         onClick={() => {
                             setCharacter(character);
                             setCharacterDetails(true);
@@ -37,7 +38,7 @@ const CharacterCard = ({ character, setCharacter, setCharacterDetails }) => {
                 </div>
             </div>
 
-        </div>
+        </StyledCharacterCard>
     );
 };
 

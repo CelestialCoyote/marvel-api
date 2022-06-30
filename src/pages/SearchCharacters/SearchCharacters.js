@@ -16,13 +16,12 @@ const SearchCharacters = () => {
             <StyledSearchResults>
                 {characters &&
                     characters.map(character =>
-                        <li key={character.id}>
-                            <CharacterCard
-                                character={character}
-                                //setCharacter={setCharacter}
-                                //setCharacterDetails={setCharacterDetails}
-                            />
-                        </li>
+                        <CharacterCard
+                            key={character.id}
+                            character={character}
+                            //setCharacter={setCharacter}
+                            //setCharacterDetails={setCharacterDetails}
+                        />
                     )
                 }
             </StyledSearchResults>
