@@ -68,10 +68,11 @@ const CharacterDetails = ({ character, setCharacterDetails }) => {
 
             </div>
 
+            <div className="comics_header">
+                Comics:
+            </div>
+
             <div className="characterDetails_comics">
-                <div className="comics_header">
-                    Comics:
-                </div>
 
                 {comicsData.map(comic =>
                     <ComicCard

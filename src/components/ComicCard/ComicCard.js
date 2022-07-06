@@ -5,10 +5,10 @@ const ComicCard = ({ comic }) => {
 
     return (
 
-        <div className="comicCard">
+        <StyledComicCard>
 
             <img
-                className="comicCard_imgage"
+                className="comicCard_image"
                 src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
                 alt="comic"
             />
@@ -36,7 +36,7 @@ const ComicCard = ({ comic }) => {
                     {comic.pageCount}
                 </p>
             </div>
-        </div>
+        </StyledComicCard>
 
     )
 

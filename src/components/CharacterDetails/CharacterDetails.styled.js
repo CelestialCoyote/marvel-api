@@ -3,13 +3,12 @@ import styled from "styled-components";
 
 export const StyledCharacterDetails = styled.div`
     
-    border-top: 4px solid gray;
+    border-top: 4px solid black;
     display: flex;
     flex-direction: column;
     margin: 0.25em;
     padding: 0.5em;
     overflow-y: scroll;
-    width: 80%;
 
     &::-webkit-scrollbar {
         display: none;
@@ -72,11 +71,10 @@ export const StyledCharacterDetails = styled.div`
         margin-top: 1.5em;
     }
 
-    .comics_ul {
+    .characterDetails_comics {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        list-style-type: none;
         margin-top: 1.5em;
         padding: 0;
     }
