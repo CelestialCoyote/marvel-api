@@ -26,7 +26,7 @@ const CharacterDetails = ({ character, setCharacterDetails }) => {
         }
 
         getComicsData();
-    }, []);
+    });
 
     return (
 
