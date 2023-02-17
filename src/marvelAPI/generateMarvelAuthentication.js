@@ -13,4 +13,5 @@ const generateMarvelAuthentication = () => {
     return marvelAuth;
 }
 
+
 export default generateMarvelAuthentication;

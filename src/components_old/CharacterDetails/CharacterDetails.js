@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import generateMarvelAuthentication from '../../marvelAPI/generateMarvelAuthentication';
-import { StyledCharacterDetails } from './CharacterDetails.styled';
 import ComicCard from '../ComicCard/ComicCard';
-//import './CharacterDetails.css';
+import './CharacterDetails.css';
 
 
 const CharacterDetails = ({ character, setCharacterDetails }) => {
@@ -30,7 +29,7 @@ const CharacterDetails = ({ character, setCharacterDetails }) => {
 
     return (
 
-        <StyledCharacterDetails>
+        <>
 
             <div className="characterDetails_container">
 
@@ -82,7 +81,7 @@ const CharacterDetails = ({ character, setCharacterDetails }) => {
                 )}
             </div>
 
-        </StyledCharacterDetails>
+        </>
     );
 };
 

@@ -1,11 +1,11 @@
-import { StyledComicCard } from './ComicCard.styled';
+import './ComicCard.css';
 
 
 const ComicCard = ({ comic }) => {
 
     return (
 
-        <StyledComicCard>
+        <>
 
             <img
                 className="comicCard_image"
@@ -36,7 +36,7 @@ const ComicCard = ({ comic }) => {
                     {comic.pageCount}
                 </p>
             </div>
-        </StyledComicCard>
+        </>
 
     )
 

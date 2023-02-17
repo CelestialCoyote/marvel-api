@@ -1,3 +1,4 @@
+import React from 'react';
 import Header from './components_old/Header/Header';
 import Footer from './components_old/Footer/Footer';
 import SearchCharacters from './pages/SearchCharacters/SearchCharacters';

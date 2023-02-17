@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import generateMarvelAuthentication from '../../marvelAPI/generateMarvelAuthentication';
-import { StyledSearchBar } from "./SearchBar.styled";
+import './SearchBar.css';
 
 
 const SearchBar = ({ setCharacters }) => {
@@ -31,7 +31,7 @@ const SearchBar = ({ setCharacters }) => {
 
     return (
         
-        <StyledSearchBar className="searchBar" onSubmit={submitForm}>
+        <div className="searchBar" onSubmit={submitForm}>
             <input
                 className="searchText"
                 type="text"
@@ -41,7 +41,7 @@ const SearchBar = ({ setCharacters }) => {
             />
 
             <button className="search-button" type="Submit">Search</button>
-        </StyledSearchBar>
+        </div>
     );
 };
 
