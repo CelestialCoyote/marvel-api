@@ -1,12 +1,12 @@
-import { StyledFooter } from './Footer.styled'
+import './Footer.css';
 
 
 const Footer = ({ copyright }) => {
 
     return (
-        <StyledFooter>
+        <>
             {copyright}
-        </StyledFooter>
+        </>
     );
 };
 

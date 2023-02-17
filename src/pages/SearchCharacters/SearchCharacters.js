@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import SearchBar from "../../components/SearchBar/SearchBar";
-import CharacterCard from '../../components/CharacterCard/CharacterCard';
-import CharacterDetails from '../../components/CharacterDetails/CharacterDetails';
-import { StyledSearchCharacters, StyledSearchResults } from "./SearchCharacters.styled";
+import SearchBar from "../../components_old/SearchBar/SearchBar";
+import CharacterCard from '../../components_old/CharacterCard/CharacterCard';
+import CharacterDetails from '../../components_old/CharacterDetails/CharacterDetails';
+import './SeachCharacters.css';
 
 
 const SearchCharacters = () => {
@@ -12,11 +12,11 @@ const SearchCharacters = () => {
 
     return (
 
-        <StyledSearchCharacters>
+        <>
 
             <SearchBar setCharacters={setCharacters} />
 
-            <StyledSearchResults>
+            <div className='search-results'>
                 {!characterDetails &&
                     characters.map(character =>
                         <CharacterCard
@@ -35,9 +35,9 @@ const SearchCharacters = () => {
                     />
                 }
 
-            </StyledSearchResults>
+            </div>
 
-        </StyledSearchCharacters>
+        </>
 
     );
 };

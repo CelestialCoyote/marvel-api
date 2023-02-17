@@ -1,0 +1,15 @@
+.search-characters {
+	align-items: center;
+	background-color: gray;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	overflow-y: scroll;
+}
+
+.search-results {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}

@@ -1,6 +1,5 @@
 import React from 'react';
-import { StyledCharacterCard } from './CharacterCard.styled';
-//import './CharacterCard.css';
+import './CharacterCard.css';
 
 
 const CharacterCard = ({ character, setCharacter, setCharacterDetails }) => {
@@ -8,7 +7,7 @@ const CharacterCard = ({ character, setCharacter, setCharacterDetails }) => {
 
     return (
 
-        <StyledCharacterCard>
+        <>
 
             <img className="characterCard_image" src={characterImage} alt="character" />
             <div className="characterCard_container">
@@ -38,7 +37,7 @@ const CharacterCard = ({ character, setCharacter, setCharacterDetails }) => {
                 </div>
             </div>
 
-        </StyledCharacterCard>
+        </>
     );
 };
 
