@@ -9,7 +9,7 @@ const App = () => {
     return (
         <div className="App">
             <GlobalStyles />
-            <Header title={"Marvel Api"} />
+            <Header title={"Marvel API"} />
             <SearchCharacters />
             <Footer copyright={"CelestialCoyote 2022"} />
         </div>
