@@ -1,12 +1,17 @@
-import { StyledHeader } from './Header.styled'
+import React from 'react';
+import Navbar from '../Navbar/Navbar';
+import './Header.css';
 
 
-const Header = ({ title }) => {
+const Header = () => {
 
     return (
-        <StyledHeader>
-            {title}
-        </StyledHeader>
+
+        <div className="header">
+            <p>React Start Project</p>
+            <Navbar />
+        </div>
+        
     );
 };
 
