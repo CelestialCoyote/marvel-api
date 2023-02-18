@@ -11,7 +11,7 @@ const generateMarvelAuthentication = () => {
     let marvelAuth = `&ts=${ts}&apikey=${API_KEY}&hash=${hash}`
     
     return marvelAuth;
-}
+};
 
 
 export default generateMarvelAuthentication;

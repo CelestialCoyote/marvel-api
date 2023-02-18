@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SearchBar from "../../components_old/SearchBar/SearchBar";
+import SearchBar from '../../components_old/SearchBar/SearchBar';
 import CharacterCard from '../../components_old/CharacterCard/CharacterCard';
 import CharacterDetails from '../../components_old/CharacterDetails/CharacterDetails';
 import './SearchCharacters.css';
